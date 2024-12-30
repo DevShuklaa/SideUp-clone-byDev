@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: "Montserrat", serif;
+    /* overflow: hidden; */
+}
+
+#nav {
+    position: fixed;
+    /* background-color: red; */
+    height: 20vh;
+    width: 99vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    padding-left: 8vw;
+    padding-bottom: 3vw;
+    margin-bottom: 200vh;
+    z-index: 99;
+}
+
+#nav img {
+    height: 80px;
+    z-index: 10;
+    transition: 0.2s ease-in-out;
+}
+
+#nav img:hover {
+    height: 75px;
+    padding-right: 7px;
+    cursor: pointer;
+}
+
+#nav h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: 0.2s ease-in-out;
+}
+
+#nav h4:hover {
+    color: #92bd1d;
+    font-weight: 450;
+    cursor: pointer;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 99vw;
+    height: 100vh;
+    z-index: -99;
+    /* overflow-x: hidden; */
+    object-fit: cover;
+}
+
+.black {
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.42);
+    z-index: -50;
+}
+
+.page1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lineThree {
+    position: relative;
+    top: -50px;
+    text-align: center;
+    overflow: hidden;
+    width: 50%;
+    z-index: 10;
+}
+
+.lineThree h4 {
+    font-weight: 520;
+    font-size: 20px;
+    /* z-index: 10; */
+}
+
+.lineOne h4 {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    text-indent: -100px;
+    text-align: center;
+    width: 60vw;
+    height: 50vh;
+    line-height: 120px;
+    /* gap: -20px; */
+    /* text-indent: 10%; */
+    font-size: 130px;
+    font-weight: 800;
+    position: relative;
+    top: 8vh;
+}
+
+.lineOne {
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.lineOne h4::before {
+    width: 60vw;
+    height: 50vh;
+    color: #000;
+    content: "Eat. Drink. Play.";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    -webkit-text-stroke: 2px #92bd1d;
+    z-index: -1;
+    /* position: inherit; */
+
+
+}
+
+.lineTwo h4 {
+    position: relative;
+    top: -50px;
+    text-transform: uppercase;
+    gap: 100;
+    text-align: center;
+    width: 70vw;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#dot {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: #9ece18;
+    border-radius: 50%;
+    z-index: 99;
+    transition: all linear 0.08s;
+}
+
+#dotBlur {
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    background-color: #92bd1d58;
+    border-radius: 50%;
+    filter: blur(50px);
+    z-index: 10;
+    transition: all linear 0.4s;
+}
+
+.scroller-in {
+    display: flex;
+}
+
+.page2 {
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    opacity: 0;
+    
+}
+
+.page2::-webkit-scrollbar {
+    display: none;
+}
+
+.scroller-in {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.scroller-in h4 {
+    display: inline-block;
+    font-size: 120px;
+    font-weight: 900;
+    font-family: sans-serif;
+    margin-right: 20px;
+    transition: all linear 0.3s;
+    color: #000;
+    -webkit-text-stroke: 0.3px #ffffff;
+}
+.scroller-in h4:hover{
+    color: #9ece18;
+    cursor: pointer;
+}
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+.aboutUs{
+    position:relative;
+    top: -50vh;
+    /* height: 50vh; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.aboutUs h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 900;
+    /* transform: rotate(-15deg); */
+}
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    gap: 80px;
+}
+.page img{
+    width: 180px;
+    border-radius: 20px;
+    height: 220px;
+}
+.page #one{
+    width: 180px;
+    height: 170px;
+}
+.page h4{
+    font-size: 20px;
+    font-weight: 300;
+    text-indent: 10px;
+    text-align:center;
+    /* text-wrap: 10px; */
+}
+#container{
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    position: relative;
+    top: -305px;
+    /* background-color: #000; */
+}
+#cards{
+    /* background-color: #000; */
+    width: 50vh;
+    height: 80vh;
+    border-radius: 20px;
+    position: relative;
+}
+#cards img{
+    z-index: 20;
+    width: 50vh;
+    height: 80vh;
+    border-radius: 20px;
+    object-fit: cover;
+
+}
+#cards:hover img{
+    background-color: #000;
+}
+#container #dots{
+    width: 200px;
+    position: absolute;
+    height: 20vh;
+    top: 3px;
+    left: 95px;
+}
+#imag{
+    position: relative;
+}
+.hoverCards{
+    width: 50vh;
+    border-radius: 20px;
+    height: 80vh;
+    background-color: #9ece18;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    display: none;
+    /* opacity: 0; */
+    top: -588px;
+}
+#dots{
+    width: 5vw;
+    height: 10vh;
+    position: relative;
+    left: -500px;
+}
+#imag:hover{
+    display: none;
+    cursor: pointer;
+}
+.hoverCards h1{
+    padding-top: 20vh;
+    font-size: 40px;
+    font-weight: 900;
+    padding-left: 3vw;
+    color: black;
+    width: 40vh;
+}
+.hoverCards h4{
+    width: 40vh;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    padding-left: 3vw;
+}
+#cards h1{
+    font-size: 40px;
+    width: 40vh;
+    top: -130px;
+    position: relative;
+    font-weight: 900;
+    padding-left: 2vw;
+}
+#sinUp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -250px;
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+    background-image: linear-gradient(to right, #9ece18 , #5fcb00);
+
+}
+#sinUp h3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 900;
+    /* font-family: sans-serif; */
+    text-transform: uppercase;
+    color: #000;
+    width: 45vw;
+}
+#grid1{
+    position: relative;
+    left: -50px;
+    width: 19vw;
+    height: 70vh;
+    filter: invert(70%);
+}
+#grid2{
+    filter:contrast(0.3);
+    position: relative;
+    left: 40px;
+    width: 19vw;
+    height: 70vh;
+}
+#foodDrink{
+    /* overflow: hidden; */
+    top: -140px;
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    /* background-color:#9ece18; */
+}
+#images{
+    display: flex;
+    position: relative;
+    width: 40vw;
+    height: 70vh;
+    border-radius: 20px;
+    overflow: hidden;
+    /* width: calc(40vw * 4); */
+    /* animation: slide 10s ease infinite */
+    /* background-color: red; */
+}
+#dots2{
+    width: 10vw;
+    position: absolute;
+    bottom: -50px;
+    left: 80px;
+}
+.image1{
+    animation: slide 15s ease-in-out infinite;
+}
+@keyframes slide{
+    10% {
+        margin-left: 0px;
+    }
+
+    40% {
+        margin-left: calc(-40vw * 1.5);
+    }
+    70%{
+        margin-left: calc(-48vw * 3);
+    }
+    100%{
+        margin-left: calc(-48vw * 0);
+    }
+}
+#FoodAndDrinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 40vw;
+    height: 70vh;
+    /* background-color: red; */
+}
+#FoodAndDrinks h1{
+    text-transform: uppercase;
+    font-size: 55px;
+    font-weight: 900;
+
+}
+#FoodAndDrinks h3{
+    width: 34vw;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align:left;
+    font-weight: 400;
+}
+#imagee img{
+    position: absolute;/
+    object-fit: cover;
+    width: 30vw;
+    height: 50vh;
+    border-radius: 20px;
+    /* float: left; */
+}
+#page3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+    overflow: hidden;
+    width: 100vw;
+    /* background-color: #92bd1d; */
+}
+#vievwBlog{
+    transform: rotate(-2.5deg);
+    display: flex;
+    justify-content:space-between;
+    gap: 50px;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+    /* top: -50px; */
+    left: 400px;
+    animation: slud  45s ease-in-out infinite;
+    /* transition: 0.2s ease-in-out; */
+}
+@keyframes slud{
+    10% {
+        margin-left: calc(-48vw * 0);
+        top: 0;
+    }
+    100%{
+        margin-left: calc(-48vw * 7);
+        top: 100px;
+    }
+}
+#vievwBlog img{
+    position: relative;
+    left: 200px;
+    border-radius: 20px;
+    height: 30vh;
+    width: 15vw;
+}
+#Follow h2{
+    text-transform: uppercase;
+    transform: rotate(-3deg);
+    font-size: 25px;
+    font-weight: 900;
+    position: relative;
+    bottom: -20px;
+    /* color:#b3e824; */
+    right: -400px;
+    /* z-index: 40; */
+}
+#Follow{
+    z-index: 90;
+}
+#Follow:hover h2{
+    cursor: pointer;
+    color: #5fcb00;
+}
+#MidText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    /* overflow: hidden; */
+}
+#MidText h2{
+    position: relative;
+    line-height: 45px;
+    top: -120px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size:30px ;
+    width: 55vw;
+    height: 5vh;
+}
+#MidText img{
+    width: 4vw;
+    /* top: 10px; */
+    height:9vh;
+    position: relative;
+}
+#colon1{
+    top: -210px;
+    left: -950px;
+    /* bottom: 2px; */
+}
+#colon2{
+    top: 210px;
+    left: -30px;
+    /* bottom: 2px; */
+}
