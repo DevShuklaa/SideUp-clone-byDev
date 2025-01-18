@@ -313,10 +313,6 @@ video {
     position: relative;
     left: -500px;
 }
-#imag:hover{
-    display: none;
-    cursor: pointer;
-}
 .hoverCards h1{
     padding-top: 20vh;
     font-size: 40px;
