@@ -279,9 +279,6 @@ video {
     object-fit: cover;
 
 }
-#cards:hover img{
-    background-color: #000;
-}
 #container #dots{
     width: 200px;
     position: absolute;
